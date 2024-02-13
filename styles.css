@@ -1,0 +1,180 @@
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif,;
+    line-height: 1.6;
+}
+
+header {
+    background-color: black;
+    color: #fb6508f8;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+#logo {
+    width: 100px; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+    transition: box-shadow 0.3s ease; /* Transition effect for the box shadow */
+}
+
+#logo:hover {
+    box-shadow: 0 0 30px #fb6508f8; /* Orange shadow on hover */
+}
+
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white ;
+    text-decoration: none;
+    
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+section {
+    padding: 50px 20px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #fb6508f8 ;
+    box-shadow: 20 20px 300px #0fcf3ff8;
+}
+
+.product {
+    margin-bottom: 20px;
+}
+
+.products {
+    width: 100%;
+    width: 300px; /* Adjust the maximum width of the slideshow */
+    overflow: hidden;
+    position: relative;
+}
+
+.product .slides {
+    display: flex;
+}
+.slide {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+    cursor: grab;
+}
+.slide img {
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%;
+    object-fit: cover; /* Preserve aspect ratio */
+    flex-shrink:0;
+}
+.photo:nth-child(1) { z-index: 4; }
+.photo:nth-child(2) { z-index: 3; }
+.photo:nth-child(3) { z-index: 2; }
+.photo:nth-child(4) { z-index: 1; }
+
+.slide:active {
+    cursor: grabbing;
+}
+
+
+
+.product h3 {
+    margin-top: 10px;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Default background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #45a049; /* New background color on hover */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Box shadow effect on hover */
+    transform: translateY(-2px);
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styling for the horizontal list */
+.horizontal-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Align items horizontally */
+}
+
+/* Styling for each list item */
+.horizontal-list li {
+    margin-right: 20px;
+}
+
+/* Styling for the links */
+.horizontal-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
